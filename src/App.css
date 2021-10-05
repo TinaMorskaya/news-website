@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  --bottom-line: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.settings-page {
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+  border: 0.2rem solid #ececec;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.settings-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#link-token {
+  padding: 0px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+#link-token-profile {
+  padding: 0px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.link:hover {
+  color: #f8f9fa;
+}
+
+.first-main-flex {
+  padding: 0.5rem 0.5rem 0px;
+  justify-content: space-between;
+  border-bottom: var(--bottom-line);
+  width: 100%;
+  background-color: rgb(248, 249, 250);
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.flex-sample {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+main {
+  padding-top: 1rem;
+}
+
+#column {
+  width: 100%;
+}
+
+.pagination-container {
+  margin: 0.8rem 0;
+  text-align: center;
+}
+
+.pagination-container > * {
+  display: inline-block;
+  margin: 0.1em;
+  padding: 0.4em 0.8em;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+  border: 1px solid transparent;
+}
+
+.pagination-container a {
+  cursor: pointer;
+}
+
+.pagination-container a:hover {
+  border-radius: 5px;
+  border: var(--bottom-line);
+}
+
+.current-page {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--main-pink-color);
+  border-radius: 5px;
+  box-shadow: 0 13px 27px -15px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.disabled {
+  color: gray;
+}
+
+@media all and (max-width: 544px) {
+  .pagination-container :nth-child(n + 2):nth-last-child(n + 2) {
+    display: none;
+  }
+  .pagination-container > * {
+    padding: 0.4em 2em;
+  }
+}
